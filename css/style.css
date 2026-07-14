@@ -11,8 +11,7 @@ body{
 /*MAIN CONTAINER*/
 
 .container{
-    width:90%;
-    max-width:1200px;
+    width:1200px;
     margin:auto;
 }
 
@@ -134,7 +133,7 @@ nav ul li a:hover{
     line-height:24px;
 }
 
-/*COFFEE SECTION*/
+/* ================= COFFEE SECTION ================= */
 
 .coffee{
     width:90%;
@@ -267,9 +266,8 @@ footer a:hover{
 }
 
 .about img{
-    width:100%;
-    max-width:800px;
-    height:auto;
+    width:800px;
+    height:500px;
     object-fit:cover;
     border-radius:10px;
     margin:20px;
@@ -277,9 +275,8 @@ footer a:hover{
 }
 
 .staff img{
-    width:100%;
-    max-width:400px;
-    height:auto;
+    width:400px;
+    height:350px;
     object-fit:cover;
     border-radius:10px;
     margin:20px;
@@ -306,7 +303,7 @@ footer a:hover{
 }
 
 .hours table{
-    width:100%;
+    width:60%;
     margin:auto;
     border-collapse:collapse;
 }
@@ -364,7 +361,7 @@ footer a:hover{
 
 .drinkCard img{
     width:100%;
-    height:auto;
+    height:500px;
     border-radius:10px;
 }
 
@@ -404,7 +401,7 @@ footer a:hover{
 }
 
 .foodMenu table{
-    width:100%;
+    width:70%;
     margin:auto;
     border-collapse:collapse;
 }
@@ -458,9 +455,7 @@ footer a:hover{
 }
 
 .shelfBox{
-    width:100%;
-    max-width:300px;
-    height:auto;
+    width:80%;
     margin:30px auto;
     background:white;
     padding:20px;
@@ -523,16 +518,12 @@ footer a:hover{
 .gallery{
     width:90%;
     margin:auto;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+    text-align:center;
 }
 
 .gallery img{
-    width:300px;
-    height:220px;
-    object-fit:cover;
+    width:310px;
+    height:250px;
     margin:15px;
     border-radius:10px;
     border:3px solid brown;
@@ -583,22 +574,20 @@ transform:scale(1.05);
 }
 
 .eventBox{
-    width:80%;
-    margin:30px auto;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0px 0px 10px lightgray;
-    text-align:center;
+    width:28%;
     display:inline-block;
+    background:white;
+    margin:15px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0px 0px 8px lightgray;
     vertical-align:top;
 }
 
 .eventBox img{
-    width:300px;
-    height:400px;
+    width:100%;
+    height:500px;
     border-radius:10px;
-    object-fit:cover;
 }
 
 .eventBox h3{
@@ -626,7 +615,7 @@ transform:scale(1.05);
 }
 
 .schedule table{
-    width:100%;
+    width:70%;
     margin:auto;
     border-collapse:collapse;
 }
@@ -776,68 +765,27 @@ transform:scale(1.05);
 
 }
 
-/*TABLET RESPONSIVE*/
+/* RESPONSIVE FOR ALL DEVICES */
 
-@media screen and (max-width:992px){
-
-.container{
-    width:95%;
+*{
+    box-sizing:border-box;
 }
 
-.bookBox,
-.coffeeBox,
-.drinkCard,
-.favoriteBox,
-.eventBox{
-    width:45%;
-}
-
-.about img,
-.staff img,
-.slider img{
-    width:100%;
+img{
+    max-width:100%;
     height:auto;
 }
 
-.hours table,
-.foodMenu table,
-.schedule table{
-    width:100%;
-}
-
-.websiteMap{
+.container{
     width:90%;
+    max-width:1200px;
+    margin:auto;
 }
-
-.contactForm{
-    width:90%;
-}
-
-.rules ul{
-    width:90%;
-}
-
-}
-
-/*MOBILE RESPONSIVE*/
 
 @media screen and (max-width:768px){
 
-header h1{
-    font-size:28px;
-}
-
-header p{
-    font-size:16px;
-}
-
 nav ul li{
     display:block;
-}
-
-.slider img{
-    width:100%;
-    height:auto;
 }
 
 .bookBox,
@@ -851,13 +799,11 @@ nav ul li{
     margin:20px auto;
 }
 
-.gallery img{
-    width:95%;
-    height:auto;
-}
-
 .about img,
-.staff img{
+.staff img,
+.gallery img,
+.slider img,
+.bookMonth img{
     width:100%;
     height:auto;
 }
@@ -870,59 +816,4 @@ nav ul li{
     width:100%;
 }
 
-.rules ul{
-    width:100%;
-}
-
-.tips{
-    width:95%;
-}
-
-.shelfBox ul{
-    width:90%;
-}
-
-.quickInfo{
-    width:95%;
-}
-
-}
-
-@media screen and (max-width:480px){
-
-header h1{
-    font-size:22px;
-}
-
-header p{
-    font-size:14px;
-}
-
-.welcome p,
-.about p,
-.staff p,
-.mission p,
-.quickInfo p{
-    font-size:16px;
-}
-
-nav ul li a{
-    padding:12px;
-}
-
-}
-
-@media screen and (max-width:768px){
-
-.gallery{
-    display:block;
-    text-align:center;
-}
-
-.gallery img{
-    width:95%;
-    height:auto;
-    margin:15px auto;
-    display:block;
-}
 }
